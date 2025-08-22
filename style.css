@@ -1,0 +1,36 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: Arial, sans-serif; line-height: 1.6; }
+
+/* Header + Nav */
+header { background: #333; color: #fff; padding: 1rem; }
+nav { display: flex; justify-content: space-between; align-items: center; }
+nav ul { display: flex; list-style: none; }
+nav ul li { margin: 0 10px; }
+nav ul li a { color: #fff; text-decoration: none; }
+
+/* Sections */
+section { padding: 2rem; }
+.project-card { background: #f4f4f4; padding: 1rem; margin: 1rem 0; border-radius: 8px; }
+
+/* Contact Form */
+form { display: flex; flex-direction: column; width: 300px; }
+form input, form textarea, form button { margin: 5px 0; padding: 10px; }
+
+/* Footer */
+footer { background: #333; color: #fff; text-align: center; padding: 1rem; }
+
+/* To-Do List */
+.todo-container { max-width: 400px; margin: auto; }
+#taskInput { padding: 10px; width: 70%; }
+#addBtn { padding: 10px; }
+#taskList li { display: flex; justify-content: space-between; margin: 5px 0; background: #f4f4f4; padding: 8px; border-radius: 5px; }
+
+/* Product Page */
+.controls { margin-bottom: 20px; }
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 15px; }
+.product { border: 1px solid #ccc; padding: 15px; border-radius: 8px; text-align: center; }
+
+/* Responsive */
+@media (max-width: 768px) {
+  nav ul { flex-direction: column; }
+}
